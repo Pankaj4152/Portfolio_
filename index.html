@@ -1,0 +1,364 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pankaj Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- For contact mail -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("yWBEuQzAgBT9yp7xf");
+        })();
+    </script>
+
+
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* cards */
+        .card-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card-effect:hover {
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="fixed top-0 left-0 w-full flex justify-between items-center p-6 bg-gray-800 z-50">
+        <div class="flex items-center">
+            <!-- <img alt="Logo" class="mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/tFKgQ9uHPgZKBhNlTPDyIqM3W0vLp6CLSgeBVKmdo9Ae4K4TA.jpg" width="40"/> -->
+            <span class="text-2xl font-bold">Pankaj</span>
+        </div>
+        <nav class="space-x-6">
+            <a class="text-green-500" href="#">Home</a>
+            <a class="hover:text-green-500" href="#features">Features</a>
+            <a class="hover:text-green-500" href="#about">About</a>
+            <a class="hover:text-green-500" href="#education">Education</a>
+            <a class="hover:text-green-500" href="#experience">Experience</a>
+            <a class="hover:text-green-500" href="#contact">Contact</a>
+            <a class="hover:text-green-500" href="#">Blog</a>
+        </nav>
+        <a class="px-4 py-2 border border-green-500 text-green-500 hover:bg-green-500 hover:text-white"
+            download="pankaj_resume.pdf" href="pankaj_resume.pdf">DOWNLOAD RESUME</a>
+    </header>
+    <main class="flex flex-col items-center justify-center min-h-screen text-center px-4 md:px-8 lg:px-16">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="max-w-4xl mx-auto text-left md:text-left md:mr-8">
+                <p class="text-green-500 text-lg">HELLO I'M</p>
+                <h1 class="text-6xl font-bold leading-tight">Pankaj Kumar Goyal</h1>
+                <p class="text-xl mt-4">A Passionate <span class="text-green-500" id="typed"></span></p>
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });"
+                    class="mt-8 px-6 py-3 bg-green-500 text-white font-bold rounded hover:bg-green-600">SAY
+                    HELLO</button>
+            </div>
+            <div class="relative mt-12 md:mt-0">
+                <img alt="Portrait of James Smith" class="rounded-full" height="400" src="pnkj.jpg" width="400" />
+            </div>
+        </div>
+        <div class="absolute inset-y-0 right-4 flex flex-col justify-center space-y-4">
+            <a class="text-white hover:text-green-500 p-3 border border-white rounded hover:bg-gray-800" target="_blank"
+                href="https://www.linkedin.com/in/pankaj4152">
+                <i class="fab fa-linkedin-in text-2xl"></i>
+            </a>
+            <a class="text-white hover:text-green-500 p-3 border border-white rounded hover:bg-gray-800" target="_blank"
+                href="https://github.com/Pankaj4152/">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a class="text-white hover:text-green-500 p-3 border border-white rounded hover:bg-gray-800" target="_blank"
+                href="https://www.kaggle.com/pankajgoyal4152">
+                <i class="fab fa-kaggle text-2xl"></i>
+            </a>
+            <a class="text-white hover:text-green-500 p-3 border border-white rounded hover:bg-gray-800" target="_blank"
+                href="https://medium.com/@pankajgoyal4152">
+                <i class="fab fa-medium text-2xl"></i>
+            </a>
+            <a class="text-white hover:text-green-500 p-3 border border-white rounded hover:bg-gray-800" target="_blank"
+                href="https://codeforces.com/profile/pankaj4152">
+                <i class="fas fa-code text-2xl"></i>
+            </a>
+        </div>
+    </main>
+    <section id="features" class="bg-blue-50 py-20 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white rounded-lg shadow-2xl p-6 text-center relative -top-4 card-effect">
+                    <img alt="Icon representing dedication" class="mx-auto mb-4" height="64"
+                        src="https://storage.googleapis.com/a1aa/image/aduepBN8ab0fr0GS6gz2An2HMIvhxfCQeLp2kAZHzIq4feCeJA.jpg"
+                        width="64" />
+                    <h3 class="text-xl text-gray-900 font-semibold mb-2">Dedication</h3>
+                    <p class="text-gray-600">Seaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae
+                        atis et sopno vitae.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-2xl p-6 text-center card-effect">
+                    <img alt="Icon representing smart work" class="mx-auto mb-4" height="64"
+                        src="https://storage.googleapis.com/a1aa/image/AZJ7tWWHWt4dJxkfcluVeLexr794sUBJrxebOS8my8Z9feCeJA.jpg"
+                        width="64" />
+                    <h3 class="text-xl text-gray-900 font-semibold mb-2">Smart Work</h3>
+                    <p class="text-gray-600">Seaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae
+                        atis et sopno vitae.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-2xl p-6 text-center relative -top-4 card-effect">
+                    <img alt="Icon representing collaboration" class="mx-auto mb-4" height="64"
+                        src="https://storage.googleapis.com/a1aa/image/clqvqs6fEuSrOSeIBzkSUusFDITl3kMWpQldNbHPlgkC4L4TA.jpg"
+                        width="64" />
+                    <h3 class="text-xl text-gray-900 font-semibold mb-2">Collaboration</h3>
+                    <p class="text-gray-600">Seaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae
+                        atis et sopno vitae.</p>
+                </div>
+                <div class="bg-white rounded-lg shadow-2xl p-6 text-center card-effect">
+                    <img alt="Icon representing technology" class="mx-auto mb-4" height="64"
+                        src="https://storage.googleapis.com/a1aa/image/tfzYtd9Jvfv6FUfmfLvyEyUNk91ssiCWTP1OePHJrnicAfCeJA.jpg"
+                        width="64" />
+                    <h3 class="text-xl text-gray-900 font-semibold mb-2">Technology</h3>
+                    <p class="text-gray-600">Seaque ipsa quae ab illo inven tore veritatis et qua si architecto beatae
+                        atis et sopno vitae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="py-20 bg-white text-gray-900 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 md:pr-8">
+                    <img alt="About James Smith" class="rounded-lg"
+                        src="https://storage.googleapis.com/a1aa/image/0X1AxGz93J55L9c4FGYUsKKiJi5CXbwNzsX3jmyoiiaUqCeJA.jpg" />
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <p class="text-lg leading-relaxed">
+                        Hello! I'm James Smith, a passionate Software Engineer with over 10 years of experience in
+                        developing innovative solutions. I specialize in full-stack development, and I have a strong
+                        background in both front-end and back-end technologies. My goal is to create efficient,
+                        scalable, and user-friendly applications that solve real-world problems.
+                    </p>
+                    <p class="text-lg leading-relaxed mt-4">
+                        I have a deep understanding of various programming languages and frameworks, and I am always
+                        eager to learn new technologies and improve my skills. In my free time, I enjoy contributing to
+                        open-source projects, exploring new tools, and staying up-to-date with industry trends.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="education" class="py-20 bg-white text-gray-900 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto p-6">
+            <div class="text-center mb-12">
+                <h2 class="text-green-500 text-lg font-bold">EDUCATION</h2>
+                <br>
+                <h1 class="text-4xl font-bold">My Education</h1>
+                <p class="text-gray-600 mt-4">Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini hoye
+                    khbor nio na sit voluptatem accusantium dolore.</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <div class="flex items-start mb-8">
+                        <div class="bg-green-500 p-4 rounded-full">
+                            <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Bachelors in Computer Science</h3>
+                            <p class="text-gray-600">M.B.M. University ( 2023 - 2027 )</p>
+                            <p class="text-gray-600 mt-2">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore
+                                veritatis et quasi architecto beatae vitae.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-8">
+                        <div class="bg-green-500 p-4 rounded-full">
+                            <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Higher Education</h3>
+                            <p class="text-gray-600">Tagore International School( 2020 - 2022 )</p>
+                            <p class="text-gray-600 mt-2">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore
+                                veritatis et quasi architecto beatae vitae.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="flex items-start mb-8">
+                        <div class="bg-green-500 p-4 rounded-full">
+                            <i class="fas fa-graduation-cap text-white text-2xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold">Diploma in Graphic Design</h3>
+                            <p class="text-gray-600">Bangla College ( 2006 - 2008 )</p>
+                            <p class="text-gray-600 mt-2">Ludantium totam rem aperia meaque ipsa quae ab illo inven tore veritatis et quasi architecto beatae vitae.</p>
+                        </div>
+                    </div> -->
+                </div>
+                <div>
+                    <img alt="Three people having a discussion in a modern office setting" class="rounded-lg shadow-lg"
+                        height="400"
+                        src="https://storage.googleapis.com/a1aa/image/GxkaOdpP9q4jNF9NZ1bQew2cr0g3lQLliUV1Us8mcnMW4F8JA.jpg"
+                        width="600" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience" class="py-20 bg-gray-100 text-gray-900 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto px-6">
+            <h2 class="text-4xl font-bold text-center mb-8">My Experience</h2>
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-1/2">
+                    <img alt="Person in a suit standing next to a table with laptops displaying graphs"
+                        class="w-full h-full object-cover" height="600"
+                        src="https://storage.googleapis.com/a1aa/image/vHv8tyKwFFYlCloA6FNfKKFY66ZtQqJKlVqhsslVu3P56F8JA.jpg"
+                        width="800" />
+                </div>
+                <div class="w-full md:w-1/2 p-8">
+                    <h2 class="text-green-500 text-sm font-bold">WORK EXPERIENCE</h2>
+                    <h1 class="text-4xl font-bold text-gray-800 mt-2">My Experience</h1>
+                    <p class="text-gray-600 mt-4">Sed ut perspiciatis unde omnis iste natus kobita tumi sopno charini
+                        hoye khbor nio na sit voluptatem.</p>
+                    <div class="mt-8">
+                        <div class="flex items-start mb-8">
+                            <div class="bg-green-500 text-white p-4 rounded-full">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-gray-800">Senior System Engineer</h3>
+                                <p class="text-gray-500">eThemeStudio ( 2018 - Running )</p>
+                                <p class="text-gray-600 mt-2">Ludantium totam rem aperia meaque ipsa quae ab illo inven
+                                    tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-green-500 text-white p-4 rounded-full">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold text-gray-800">Data Architect</h3>
+                                <p class="text-gray-500">Easy Computers ( 2015 - 2018 )</p>
+                                <p class="text-gray-600 mt-2">Ludantium totam rem aperia meaque ipsa quae ab illo inven
+                                    tore veritatis et quasi architecto beatae et vitae ullam molesti quae quasi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-20 bg-gray-100 text-gray-900 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto p-6">
+            <div class="text-center mb-8">
+                <h2 class="text-green-500 text-lg">CONTACT ME</h2>
+                <br>
+                <h1 class="text-4xl font-bold">Let's Connect</h1>
+            </div>
+            <div class="flex flex-col md:flex-row justify-between items-start">
+                <div class="space-y-6 mb-8 md:mb-0">
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-green-500 text-white p-4 rounded-full">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Location</h3>
+                            <p>Jodhpur, Rajasthan, India</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-green-500 text-white p-4 rounded-full">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Phone</h3>
+                            <p>+91 8094938417</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center space-x-4">
+                        <div class="bg-green-500 text-white p-4 rounded-full">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Email</h3>
+                            <p>pankajgoyal4152@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <form id="contact-form" class="space-y-4">
+                        <div class="flex space-x-4">
+                            <input type="text" name="name" placeholder="Your Name" class="w-1/2 p-3 border rounded"
+                                required>
+                            <input type="email" name="email" placeholder="Your Email" class="w-1/2 p-3 border rounded"
+                                required>
+                        </div>
+                        <div class="flex space-x-4">
+                            <input type="text" name="phone" placeholder="Your Phone" class="w-1/2 p-3 border rounded"
+                                required>
+                            <input type="text" name="subject" placeholder="Your Subject"
+                                class="w-1/2 p-3 border rounded" required>
+                        </div>
+                        <textarea name="message" placeholder="Start writing message here"
+                            class="w-full p-3 border rounded h-32" required></textarea>
+                        <button type="submit" class="bg-green-500 text-white px-6 py-3 rounded">SUBMIT NOW</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+
+    </script>
+
+
+    <script type="text/javascript">
+
+        //  For the Profession typing animation
+        document.addEventListener('DOMContentLoaded', function () {
+            var typed = new Typed('#typed', {
+                strings: ["AI/ML Engineer_"],
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true
+            });
+        });
+
+
+        // for contact me option
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            emailjs.sendForm('service_cgxqtjj', 'template_eyg5wj7', this)
+                .then(function () {
+                    alert('Message sent successfully!');
+                }, function (error) {
+                    alert('Failed to send message. Please try again later.');
+                });
+        });
+
+
+
+        // cards
+        document.querySelectorAll('.card-effect').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.transform = `translate(${(x - rect.width / 2) / 10}px, ${(y - rect.height / 2) / 10}px)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translate(0, 0)';
+            });
+        });
+    </script>
+</body>
+
+</html>

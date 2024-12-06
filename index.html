@@ -41,6 +41,24 @@
 </head>
 
 <body class="bg-gray-900 text-white">
+    <div id="desktop-warning" class="hidden fixed top-0 left-0 w-full bg-yellow-500 text-white text-center py-2 z-50">
+        For the best experience, please view this site on a laptop or desktop.
+    </div>
+    <script>
+        function checkScreenSize() {
+            const warningMessage = document.getElementById('desktop-warning');
+            if (window.innerWidth <= 768) {
+                warningMessage.classList.remove('hidden'); // Show the warning
+            } else {
+                warningMessage.classList.add('hidden'); // Hide the warning
+            }
+        }
+    
+        // Run the check on load and on resize
+        window.addEventListener('resize', checkScreenSize);
+        window.addEventListener('load', checkScreenSize);
+    </script>
+        
     <header class="fixed top-0 left-0 w-full flex justify-between items-center p-6 bg-gray-800 z-50">
         <div class="flex items-center">
             <!-- <img alt="Logo" class="mr-3" height="40" src="https://storage.googleapis.com/a1aa/image/tFKgQ9uHPgZKBhNlTPDyIqM3W0vLp6CLSgeBVKmdo9Ae4K4TA.jpg" width="40"/> -->
